@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+    <button id="addTodo">Add todo</button>
+
+  <div id="todos">
+    
+  </div>
+
+
+  <script>
+    const todoElement = document.getElementById('todos');
+    const addTodoBtnElement = document.getElementById('addTodo')
+
+    const data = ['html', 'javascript']; // data from BE side
+    function renderHTML() {
+      data.forEach(item => {
+        const divElement = document.createElement('div');
+        divElement.innerHTML = `Title: ${item}`
+        todoElement.append(divElement)
+      })
+    }
+
+    renderHTML();
+
+    addTodoBtnElement.addEventListener('click', () => {
+      const newItem = 'todo' + Date.now()
+      data.push(newItem);
+
+      todoElement.innerHTML = '';
+      console.log('click: ', data)
+
+      renderHTML();
+    })
+
+  </script>
+</body>
+</html>
+
+
