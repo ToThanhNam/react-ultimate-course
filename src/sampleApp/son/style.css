@@ -1,0 +1,30 @@
+.color-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 400px;
+
+  & .color-box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+
+    &.red {
+      background-color: red;
+    }
+
+    &.yellow {
+      background-color: yellow;
+    }
+
+    &.aqua {
+      background-color: aqua;
+    }
+
+    &.purple {
+      background-color: purple;
+    }
+  }
+}

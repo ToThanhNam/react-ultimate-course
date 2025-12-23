@@ -1,10 +1,10 @@
-import JSX from "./fundanmental/JSX"
-import Props from "./fundanmental/Props"
-import State from "./fundanmental/State"
-import TonyColorBox from "./sampleApp/tony/TonyColorBox"
+import JSX from "./fundanmental/JSX";
+import Props from "./fundanmental/Props";
+import State from "./fundanmental/State";
+import SonColorBox from "./sampleApp/son/SonColorBox";
+import TonyColorBox from "./sampleApp/tony/TonyColorBox";
 
 function App() {
-
   return (
     <>
       <JSX />
@@ -20,11 +20,14 @@ function App() {
       <TonyColorBox />
 
       <br />
+      <SonColorBox />
+
+      <br />
       <br />
       <br />
       <br />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
