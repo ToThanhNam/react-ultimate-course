@@ -3,6 +3,7 @@ import Props from "./fundanmental/Props";
 import State from "./fundanmental/State";
 import SonColorBox from "./sampleApp/son/SonColorBox";
 import TonyColorBox from "./sampleApp/tony/TonyColorBox";
+import ColorBoxNam from "./sampleApp/namtt/ColorBox"
 
 function App() {
   return (
@@ -19,13 +20,8 @@ function App() {
       <br />
       <TonyColorBox />
 
-      <br />
       <SonColorBox />
-
-      <br />
-      <br />
-      <br />
-      <br />
+      <ColorBoxNam />
     </>
   );
 }
