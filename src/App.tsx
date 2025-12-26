@@ -3,8 +3,9 @@ import Props from "./fundanmental/Props";
 import State from "./fundanmental/State";
 import SonColorBox from "./sampleApp/son/SonColorBox";
 import TonyColorBox from "./sampleApp/tony/TonyColorBox";
-import ColorBoxNam from "./sampleApp/namtt/ColorBox"
-import TrafficLightNam from "./sampleApp/lightgameplan/TrafficLightNam"
+import ColorBoxNam from "./sampleApp/namtt/colorboxnam/ColorBox"
+import TrafficLightNam from "./sampleApp/namtt/lightgamenam/TrafficLightNam"
+import Tabs from "./sampleApp/namtt/tabsnam/Tabs"
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
 
       <br />
       <TrafficLightNam />
+
+      <br />
+      <Tabs />
     </>
   );
 }
