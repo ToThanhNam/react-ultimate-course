@@ -1,0 +1,74 @@
+.traffic-light-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.traffic-light-housing {
+    background-color: #1a1a1a;
+    width: 120px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #333;
+    border: 3px solid #1a1a1a;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.light-red {
+    background-color: #333;
+}
+
+.light-red.active {
+    background-color: #e74c3c;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.8), 0 0 40px rgba(231, 76, 60, 0.4);
+}
+
+.light-yellow {
+    background-color: #333;
+}
+
+.light-yellow.active {
+    background-color: #f1c40f;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.8), 0 0 40px rgba(241, 196, 15, 0.4);
+}
+
+.light-green {
+    background-color: #333;
+}
+
+.light-orange {
+    background-color: #333;
+}
+
+.light-orange.active {
+    background-color: #ffa500;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.8), 0 0 40px rgba(255, 165, 0, 0.4);
+}
+
+.light-green.active {
+    background-color: #2ecc71;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.8), 0 0 40px rgba(46, 204, 113, 0.4);
+}
+
+.light-status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
