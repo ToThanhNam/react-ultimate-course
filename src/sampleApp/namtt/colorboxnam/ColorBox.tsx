@@ -14,6 +14,7 @@ const COLOR_LIST: ColorItem[] = [
     { id: 4, name: 'purple', hex: '#9b59b6' },
 ];
 
+
 const ColorBoxNam = () => {
 
     // Quản lý state khai báo ở đây

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 
+const colors = ["red", "yellow", "aqua", "purple"];
 export default function SonColorBox() {
   const [selectedColor, setSelectedColor] = useState<string>("");
-  const colors = ["red", "yellow", "aqua", "purple"];
+  
 
   const handleColorChange = (color: string) => {
     setSelectedColor(color !== selectedColor ? color : "");

@@ -10,7 +10,7 @@ interface LightConfig {
 const TRAFFIC_LIGHTS: LightConfig[] = [
     { id: 1, color: 'green',  duration: 5000 },
     { id: 2, color: 'yellow', duration: 4000 },
-    { id: 3, color: 'red',    duration: 3000 }
+    { id: 3, color: 'red',    duration: 3000 },
     // { id: 4, color: 'orange', duration: 1000 }
 ];
 
