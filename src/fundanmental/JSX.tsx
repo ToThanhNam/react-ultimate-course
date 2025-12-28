@@ -1,4 +1,5 @@
 import React from "react"
+import SearchBar from "../components/molecules/SearchBar"
 
 
 /*
@@ -28,7 +29,11 @@ function JSX() {
         style={myStyle}
       >this is dynamic style</div>
 
-      Variable: {myElement}
+      Variable: {myElement} <br />
+
+
+      <h4>Search Bar</h4>
+      <SearchBar />
     </React.Fragment>
   )
 }
