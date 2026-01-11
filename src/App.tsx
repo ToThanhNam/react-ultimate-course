@@ -6,6 +6,7 @@ import TonyColorBox from "./sampleApp/tony/TonyColorBox";
 import ColorBoxNam from "./sampleApp/namtt/colorboxnam/ColorBox"
 import TrafficLightNam from "./sampleApp/namtt/lightgamenam/TrafficLightNam"
 import Tabs from "./sampleApp/namtt/tabsnam/Tabs"
+import Event from "./fundanmental/Event";
 
 function App() {
   return (
@@ -30,6 +31,17 @@ function App() {
 
       <br />
       <Tabs />
+
+      <br />
+      <br />
+      <Event />
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
