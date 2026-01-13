@@ -1,3 +1,5 @@
+import buttonStyle from './button.module.css';
+
 interface ButtonProps {
   buttonText?: string,
   variant?: 'primary' | 'danger' | 'outline',
@@ -17,10 +19,12 @@ function Button({
     outline: 'border border-gray-300 bg-white text-gray-600 font-medium hover:bg-gray-100 active:scale-95 transition'
   }
 
+  const moduleStyle = buttonStyle['button-primary']
+
   return (
     <button 
       type="submit" 
-      className={`cursor-pointer w-32 h-[46px] rounded-md text-sm ${variantClassess[variant]}`}
+      className={`cursor-pointer w-32 h-[46px] rounded-md text-sm ${variantClassess[variant]} ${moduleStyle}`}
       onClick={onClick}
     >{buttonText}</button>
   )

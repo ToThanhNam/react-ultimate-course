@@ -7,6 +7,8 @@ import ColorBoxNam from "./sampleApp/namtt/colorboxnam/ColorBox"
 import TrafficLightNam from "./sampleApp/namtt/lightgamenam/TrafficLightNam"
 import Tabs from "./sampleApp/namtt/tabsnam/Tabs"
 import Event from "./fundanmental/Event";
+import ConditionalRendering from "./fundanmental/ConditionalRendering";
+import LiftingStateUp from "./fundanmental/LiftingStateUp";
 
 function App() {
   return (
@@ -35,6 +37,12 @@ function App() {
       <br />
       <br />
       <Event />
+
+      <br />
+      <ConditionalRendering />
+
+      <br />
+      <LiftingStateUp />
       
       <br />
       <br />
