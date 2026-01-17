@@ -6,7 +6,20 @@
 - library & framework
 - SPA & MPA (multiple page app)
 - react function compomemt / function component react
+- presentation/pure/stateless component
+- container/stateful component
+- form
+  - controller form
+  - uncontroller form
+  - Build form
+    - https://react-hook-form.com/
+    - https://formik.org/
+  - Validate form
+    - yup
+    - zod
 
+# useHook
+https://usehooks.com/
 
 # Select field
 - one item

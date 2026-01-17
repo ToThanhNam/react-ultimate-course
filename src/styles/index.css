@@ -23,3 +23,7 @@ button {
 .button-secondary {
   background-color:rgb(24, 34, 172);
 }
+
+input {
+  border: 1px solid #000;
+}

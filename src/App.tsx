@@ -9,6 +9,7 @@ import Tabs from "./sampleApp/namtt/tabsnam/Tabs"
 import Event from "./fundanmental/Event";
 import ConditionalRendering from "./fundanmental/ConditionalRendering";
 import LiftingStateUp from "./fundanmental/LiftingStateUp";
+import Form from "./fundanmental/Form";
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
 
       <br />
       <LiftingStateUp />
+
+      <br />
+      <Form />
       
       <br />
       <br />
