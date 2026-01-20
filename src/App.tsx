@@ -10,6 +10,7 @@ import Event from "./fundanmental/Event";
 import ConditionalRendering from "./fundanmental/ConditionalRendering";
 import LiftingStateUp from "./fundanmental/LiftingStateUp";
 import Form from "./fundanmental/Form";
+import StateHook from "./fundanmental/StateHook";
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
 
       <br />
       <Form />
+
+      <br />
+      <StateHook />
       
       <br />
       <br />
