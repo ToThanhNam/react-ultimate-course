@@ -1,12 +1,11 @@
-import type { Todo } from '../LiftingStateUp'
+import { useTodoContext } from '../../contexts/TodoContext'
 import TodoItem from './TodoItem'
 
-interface TodoListProps {
-  todos: Todo[],
-  deleteTodo: (id: number) => void
-}
+function TodoList() {
+  const { todos } = useTodoContext();
 
-function TodoList({ todos, deleteTodo }: TodoListProps) {
+  console.log('todos context: ', todos)
+
   return (
     <div>
       <ul>
@@ -15,7 +14,6 @@ function TodoList({ todos, deleteTodo }: TodoListProps) {
               <TodoItem 
                 key={todo.id} 
                 todo={todo} 
-                deleteTodo={deleteTodo}
               />
           )
         })}

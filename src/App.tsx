@@ -11,8 +11,13 @@ import ConditionalRendering from "./fundanmental/ConditionalRendering";
 import LiftingStateUp from "./fundanmental/LiftingStateUp";
 import Form from "./fundanmental/Form";
 import StateHook from "./fundanmental/StateHook";
+import EffectHook from "./fundanmental/EffectHook";
+import React from "react";
+import { TodoProvider } from "./contexts/TodoContext";
 
 function App() {
+  const [isShowEffectComponent, setIsShowEffectComponent] = React.useState(true)
+  
   return (
     <>
       <JSX />
@@ -44,13 +49,21 @@ function App() {
       <ConditionalRendering />
 
       <br />
-      <LiftingStateUp />
+      <TodoProvider>
+        <LiftingStateUp />
+      </TodoProvider>
 
       <br />
       <Form />
 
       <br />
       <StateHook />
+      
+      <br />
+      <button type="button" onClick={() => setIsShowEffectComponent(prevState => !prevState)}>Toggle Effect Component</button>
+      {isShowEffectComponent && (
+        <EffectHook />
+      )}
       
       <br />
       <br />

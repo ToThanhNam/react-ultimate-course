@@ -1,12 +1,12 @@
 import Button from "../../components/atoms/Button"
-import type { Todo } from "../LiftingStateUp"
-
+import { useTodoContext } from "../../contexts/TodoContext"
+import type { ITodo } from "../../types/todoTypes";
 interface TodoItemProps {
-  todo: Todo,
-  deleteTodo: (id: number) => void
+  todo: ITodo,
 }
 
-function TodoItem({ todo, deleteTodo }: TodoItemProps) {
+function TodoItem({ todo }: TodoItemProps) {
+  const { deleteTodo } = useTodoContext();
 
   return (
     <div>
