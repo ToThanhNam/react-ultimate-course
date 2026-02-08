@@ -14,6 +14,8 @@ import StateHook from "./fundanmental/StateHook";
 import EffectHook from "./fundanmental/EffectHook";
 import React from "react";
 import { TodoProvider } from "./contexts/TodoContext";
+import RefHook from "./fundanmental/RefHook";
+import UseImperativeHandle from "./fundanmental/UseImperativeHandle";
 
 function App() {
   const [isShowEffectComponent, setIsShowEffectComponent] = React.useState(true)
@@ -64,6 +66,13 @@ function App() {
       {isShowEffectComponent && (
         <EffectHook />
       )}
+
+      <br />
+      <RefHook />
+      <br />
+
+      <UseImperativeHandle />
+    
       
       <br />
       <br />
